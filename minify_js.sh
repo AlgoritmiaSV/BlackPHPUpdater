@@ -22,7 +22,7 @@ temp_file2=$temp_folder/bpscript2.js
 cd $dir
 
 # Verificar cuáles de los scipt son más nuevos que el último bpscript.min.js generado.
-scripts=(main lists forms change_status table_calculation dialogs order tree charts persistent_forms)
+scripts=(main lists forms change_status table_calculation dialogs tree charts persistent_forms passwords required_asterisk)
 group1=(change_status main lists forms passwords required_asterisk)
 group2=(dialogs tree charts persistent_forms table_calculation)
 modified=false

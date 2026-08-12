@@ -82,25 +82,24 @@ rsync -cr --delete --chown=fajardo:fajardo --chmod=D755,F644 \
 	--exclude ".git" \
 	--exclude ".gitignore" \
 	--exclude "entities/" \
-	--exclude "db/historical/" \
+	--exclude "db/mysql/history/" \
 	--exclude "node_modules/" \
 	--exclude ".vscode" \
 	--include "default_config.php" \
 	--exclude "*.php" \
-	--include "public/scripts/*.min.js" \
-	--include "public/scripts/serviceWorker.js" \
-	--include "public/scripts/table_sorting.js" \
-	--include "public/scripts/file_downloader.js" \
-	--include "public/scripts/menu.js" \
-	--include "public/scripts/billing.js" \
-	--include "public/scripts/tabs.js" \
-	--include "public/scripts/receipts.js" \
-	--include "public/scripts/maps_antennas.js" \
-	--include "public/scripts/maps_billboards.js" \
-	--include "public/scripts/json_reader.js" \
-	--include "public/scripts/sync_period.js" \
+	--exclude "public/scripts/main.js" \
+	--exclude "public/scripts/lists.js" \
+	--exclude "public/scripts/forms.js" \
+	--exclude "public/scripts/change_status.js" \
+	--exclude "public/scripts/table_calculation.js" \
+	--exclude "public/scripts/dialogs.js" \
+	--exclude "public/scripts/tree.js" \
+	--exclude "public/scripts/charts.js" \
+	--exclude "public/scripts/persistent_forms.js" \
+	--exclude "public/scripts/passwords.js" \
+	--exclude "public/scripts/required_asterisk.js" \
 	--include "public/scripts/*/*.js" \
-	--exclude "public/scripts/*.js" \
+	--include "public/scripts/*.js" \
 	--exclude "*.html" \
 	--include "*.min.css" \
 	--exclude "*.css" \
