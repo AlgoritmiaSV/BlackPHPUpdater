@@ -88,6 +88,8 @@ mysql --skip-column-names \
 		UNION ALL
 		SELECT locale_name FROM ${db_prefix}app_locales
 		UNION ALL
+		SELECT category_name FROM ${db_prefix}app_option_categories
+		UNION ALL
 		SELECT option_description FROM ${db_prefix}app_options
 		UNION ALL
 		SELECT value_label FROM ${db_prefix}app_option_values
